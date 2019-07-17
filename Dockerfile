@@ -25,5 +25,3 @@ RUN docker-php-source extract && \
 		--with-config-file-scan-dir=/usr/local/etc/php/conf.d && \
 	make && make install && \
 	docker-php-source delete
-
-RUN pecl install xdebug && docker-php-ext-enable xdebug
