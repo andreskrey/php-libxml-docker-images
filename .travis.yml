@@ -41,4 +41,4 @@ script:
     )
 after_script:
   - docker images
-  - docker push andreskrey/php-${PHP_VERSION}-libxml-${LIBXML_VERSION}
+  - docker push andreskrey/php-${PHP_VERSION}:libxml-${LIBXML_VERSION}
