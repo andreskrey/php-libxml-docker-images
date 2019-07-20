@@ -37,7 +37,7 @@ script:
     (
       set -Eeuo pipefail
       set -x
-      docker build --build-arg php_version=${PHP_VERSION} --build-arg libxml_version=${LIBXML_VERSION} -t "andreskrey/php-$PHP_VERSION-libxml-$LIBXML_VERSION" .
+      docker build --build-arg php_version=${PHP_VERSION} --build-arg libxml_version=${LIBXML_VERSION} -t "andreskrey/php-$PHP_VERSION:libxml-$LIBXML_VERSION" .
     )
 after_script:
   - docker images
